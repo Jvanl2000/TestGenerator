@@ -1,0 +1,32 @@
+\documentclass[12pt]{exam}
+
+\usepackage[override]{fancyhdr}
+\usepackage{tikz}
+\usepackage{needspace}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyhead[L]{\textbf{%s}}
+\fancyhead[R]{\today}
+\fancyfoot[C]{Page \thepage}
+
+\newcommand{\studentInfo}[4]{
+  \noindent
+  \textbf{Name:} \underline{\makebox[5cm][c]{#1}} \hfill
+  \textbf{Hour:} \underline{\makebox[5cm][c]{#2}} \\
+  \textbf{Date: } \underline{\makebox[5cm][c]{#3}} \hfill
+  \textbf{Score:} \underline{\makebox[5cm][c]{#4}}
+}
+
+\begin{document}
+
+\begin{center}
+  \Huge \textbf{%s}
+\end{center}
+
+\studentInfo{}{}{}{}
+
+\vspace{1cm}
+
